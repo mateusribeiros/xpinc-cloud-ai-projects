@@ -109,11 +109,6 @@ plt.close()
    - Priorizar acordos com transportadoras que tenham hubs regionais próximos aos mercados-alvo
    - Negociar contratos de longo prazo para rotas de alto volume (Europa-Canadá-Japão)
 
-## Arquivos Gerados
-
-1. **Meganium_Regional_Demand.csv**: Tabela consolidada com a demanda por produto em cada país
-2. **demanda_por_pais.png**: Heatmap visualizando a popularidade dos produtos por região
-
 ## Conclusões Estratégicas
 
 1. **Otimização de Produção**:
