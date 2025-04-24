@@ -49,16 +49,13 @@ Este projeto tem como objetivo transformar dados de vendas em **insights estrat�
 
 **Ações sugeridas com base na análise:**
 
-1. **Envios baseados em demanda prevista**
-   - Utilize o CSV `Meganium_Regional_Demand.csv` para priorizar o envio dos consoles mais vendidos por região.
-
-2. **Hubs regionais**
+1. **Hubs regionais**
    - Estabelecer centros próximos a mercados-chave (ex.: **Canadá e Austrália**) para distribuição eficiente de modelos RG 40XXV e RG CubeXX.
 
-3. **Previsão dinâmica**
+2. **Previsão dinâmica**
    - Atualizar a análise mensalmente para captar **sazonalidades** com base na coluna `date`.
 
-4. **Integração com distribuidores**
+3. **Integração com distribuidores**
    - Compartilhar relatórios e dashboards para sincronizar pedidos com as **projeções de demanda**.
 
 ---
