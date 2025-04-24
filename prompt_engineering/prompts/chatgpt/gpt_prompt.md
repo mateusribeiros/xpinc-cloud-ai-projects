@@ -38,10 +38,10 @@ Este projeto tem como objetivo transformar dados de vendas em **insights estrat�
 ## 📊 3. Visualizações
 
 ### 🔥 Heatmap: Demanda por Modelo em Cada País
-![Heatmap](./heatmap_meganium.png)
+![Heatmap](../figures/heatmap_meganium.png)
 
 ### 📈 Gráfico de Barras: Quantidade Vendida por País
-![Bar Chart](./top_selling_consoles.png)
+![Bar Chart](../figures/top_selling_consoles.png)
 
 ---
 
