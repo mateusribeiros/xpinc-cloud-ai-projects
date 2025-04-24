@@ -24,9 +24,7 @@ Este projeto explora o uso de prompts com ferramentas de inteligência artificia
 3. [Componentes Principais](#componentes-principais)
 4. [Resultados e Insights](#resultados-e-insights)
 5. [Como Começar](#como-começar)
-6. [Inspiração & Próximos Passos](#inspiração--próximos-passos)
-7. [Contribuição](#contribuição)
-8. [Licença](#licença)
+6. [Contribuição](#contribuição)
 
 ---
 
@@ -56,6 +54,8 @@ project_base/
 │   ├── chatgpt/
 │   │   ├── gpt_prompt.md   # Resultados do ChatGPT
 │   │   └── figures/        # Gráficos gerados pelo ChatGPT
+│   │       ├── heatmap_meganium.png
+│   │       └── top_selling_consoles.png
 │   └── deepseek/
 │       └── deepseek_prompt.md  # Resultados do Deepseek
 ├── scripts/
@@ -91,7 +91,6 @@ A falta de visibilidade sobre as preferências regionais prejudica a eficiência
 **Formato de Saída:**
 - Visualizações (gráficos, heatmaps de demanda regional).
 - Relatório textual com insights estratégicos.
-- Novo CSV processado (ex.: `Meganium_Regional_Demand.csv`).
 - (Opcional) Código Python para reprodução da análise.
 
 **Conteúdo Principal:**
