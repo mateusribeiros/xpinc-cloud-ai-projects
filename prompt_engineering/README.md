@@ -24,7 +24,7 @@ Este projeto explora o uso de prompts com ferramentas de inteligência artificia
 3. [Componentes Principais](#componentes-principais)
 4. [Resultados e Insights](#resultados-e-insights)
 5. [Como Começar](#como-começar)
-6. [Contribuição](#contribuição)
+6. [Contribuição](## 🤝 Contribuição)
 
 ---
 
@@ -154,9 +154,4 @@ Contribuições são bem-vindas!
 2. Crie uma branch: `git checkout -b minha-feature`.
 3. Envie um pull request.
 
----
-
-## 📄 Licença
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
 
