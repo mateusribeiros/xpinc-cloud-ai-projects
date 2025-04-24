@@ -17,17 +17,6 @@ Este projeto explora o uso de prompts com ferramentas de inteligência artificia
 
 ---
 
-## 📋 Conteúdo deste README
-
-1. [Cenário de Negócio](#cenário-de-negócio)
-2. [Estrutura do Repositório](#estrutura-do-repositório)
-3. [Componentes Principais](#componentes-principais)
-4. [Resultados e Insights](#resultados-e-insights)
-5. [Como Começar](#como-começar)
-6. [Contribuição](#contribuição)
-
----
-
 ## 🎯 Cenário de Negócio
 
 A Meganium fabrica consoles eletrônicos e terceiriza distribuição e vendas para terceiros (AliExpress, Shopee, Etsy). Cada plataforma gera relatórios próprios, resultando em:
