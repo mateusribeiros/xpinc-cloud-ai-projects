@@ -1,0 +1,27 @@
+Para identificar a bandeira de um cartão de crédito a partir do número dele, você pode usar os BINs (Bank Identification Numbers), que são os primeiros 6 dígitos do número do cartão. Cada bandeira tem um intervalo específico de BINs.
+Principais Bandeiras de Cartões e Seus BINs:
+| **Bandeira**         | **BINs (Prefixos)**                                | **Tamanho**     |                                                                                        |
+| -------------------- | -------------------------------------------------- | --------------- | -------------------------------------------------------------------------------------- |
+| **Visa**             | 4                                                  | 13 a 19 dígitos |                                                                                        |
+| **Mastercard**       | 51–55, 2221–2720                                   | 16 dígitos      |                                                                                        |
+| **American Express** | 34, 37                                             | 15 dígitos      |                                                                                        |
+| **Elo**              | 401178, 431274, 5067, 627780, 636297               | 16 dígitos      |                                                                                        |
+| **Diners Club**      | 300–305, 36, 38, 39                                | 14 a 16 dígitos |                                                                                        |
+| **Discover**         | 6011, 622126–622925, 644–649, 65                   | 16 dígitos      |                                                                                        |
+| **Hipercard**        | 38, 60                                             | 16 dígitos      |                                                                                        |
+| **JCB**              | 3528–3589                                          | 16 dígitos      |                                                                                        |
+| **Aura**             | 50                                                 | 16 dígitos      |                                                                                        |
+| **UnionPay**         | 62                                                 | 16 a 19 dígitos |                                                                                        |
+| **Maestro**          | 50, 56–69                                          | 12 a 19 dígitos |                                                                                        |
+| **Cabal**            | 58, 60                                             | 14 a 19 dígitos |                                                                                        |
+| **Visa Electron**    | 4026, 417500, 4844, 4913, 4917                     | 16 dígitos      |                                                                                        |
+| **Verve**            | 506099–506198, 507865–507964, 650002–650027        | 16 a 19 dígitos |                                                                                        |
+| **InstaPayment**     | 637–639                                            | 16 dígitos      |                                                                                        |
+| **InterPayment**     | 636                                                | 16 dígitos      |                                                                                        |
+| **Laser**            | 6304, 6706, 6771, 6709                             | 16 a 19 dígitos |                                                                                        |
+| **Switch**           | 4903, 4905, 4911, 4936, 564182, 633110, 6333, 6759 | 16 a 19 dígitos |                                                                                        |
+| **Solo**             | 6334, 6767                                         | 16 a 19 dígitos |                                                                                        |
+| **UATP**             | 1                                                  | 15 dígitos      |                                                                                        |
+| **RuPay**            | 60, 6521–6522                                      | 16 dígitos      |                                                                                        |
+| **Troy**             | 9792                                               | 16 dígitos      |                                                                                        |
+| **Mir**              | 2200–2204                                          | 16 a 19 dígitos | ([Visa][1], [neaPay][2], [Bincodes][3], [Wikipedia][4], [Discover® Global Network][5]) |
