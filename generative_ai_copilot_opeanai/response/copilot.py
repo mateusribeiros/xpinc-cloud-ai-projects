@@ -1,0 +1,95 @@
+import unittest
+
+def validar_usuario(dados):
+    # Verifica se dados é um dicionário
+    if not isinstance(dados, dict):
+        return (False, "Os dados do usuário devem ser fornecidos em um dicionário.")
+
+    # Verifica se todas as chaves necessárias estão presentes
+    for campo in ['nome', 'email', 'senha']:
+        if campo not in dados:
+            return (False, f"O campo '{campo}' é obrigatório.")
+
+    nome = dados.get('nome', '')
+    email = dados.get('email', '')
+    senha = dados.get('senha', '')
+
+    # Garante que os campos são strings
+    if not isinstance(nome, str):
+        return (False, "O nome deve ser uma string.")
+    if not isinstance(email, str):
+        return (False, "O e-mail deve ser uma string.")
+    if not isinstance(senha, str):
+        return (False, "A senha deve ser uma string.")
+
+    if len(nome.strip()) < 3:
+        return (False, "O nome deve ter pelo menos 3 caracteres.")
+    if '@' not in email or '.' not in email:
+        return (False, "O e-mail deve conter '@' e '.'.")
+    if len(senha) < 8:
+        return (False, "A senha deve ter pelo menos 8 caracteres.")
+    if not any(c.isalpha() for c in senha) or not any(c.isdigit() for c in senha):
+        return (False, "A senha deve conter letras e números.")
+    return (True, "Usuário válido.")
+    # Casos de teste para validar a função validar_usuario
+
+class TestValidarUsuario(unittest.TestCase):
+    def test_usuario_valido(self):
+        dados = {'nome': 'Ana', 'email': 'ana@email.com', 'senha': 'abc12345'}
+        self.assertEqual(validar_usuario(dados), (True, "Usuário válido."))
+
+    def test_nome_curto(self):
+        dados = {'nome': 'Al', 'email': 'al@email.com', 'senha': 'abc12345'}
+        self.assertEqual(validar_usuario(dados), (False, "O nome deve ter pelo menos 3 caracteres."))
+
+    def test_email_invalido_sem_arroba(self):
+        dados = {'nome': 'Alice', 'email': 'aliceemail.com', 'senha': 'abc12345'}
+        self.assertEqual(validar_usuario(dados), (False, "O e-mail deve conter '@' e '.'."))
+
+    def test_email_invalido_sem_ponto(self):
+        dados = {'nome': 'Alice', 'email': 'alice@emailcom', 'senha': 'abc12345'}
+        self.assertEqual(validar_usuario(dados), (False, "O e-mail deve conter '@' e '.'."))
+
+    def test_senha_curta(self):
+        dados = {'nome': 'Alice', 'email': 'alice@email.com', 'senha': 'abc123'}
+        self.assertEqual(validar_usuario(dados), (False, "A senha deve ter pelo menos 8 caracteres."))
+
+    def test_senha_sem_letra(self):
+        dados = {'nome': 'Alice', 'email': 'alice@email.com', 'senha': '12345678'}
+        self.assertEqual(validar_usuario(dados), (False, "A senha deve conter letras e números."))
+
+    def test_senha_sem_numero(self):
+        dados = {'nome': 'Alice', 'email': 'alice@email.com', 'senha': 'abcdefgh'}
+        self.assertEqual(validar_usuario(dados), (False, "A senha deve conter letras e números."))
+
+    def test_dados_nao_dict(self):
+        dados = ['nome', 'email', 'senha']
+        self.assertEqual(validar_usuario(dados), (False, "Os dados do usuário devem ser fornecidos em um dicionário."))
+
+    def test_campo_nome_ausente(self):
+        dados = {'email': 'ana@email.com', 'senha': 'abc12345'}
+        self.assertEqual(validar_usuario(dados), (False, "O campo 'nome' é obrigatório."))
+
+    def test_campo_email_ausente(self):
+        dados = {'nome': 'Ana', 'senha': 'abc12345'}
+        self.assertEqual(validar_usuario(dados), (False, "O campo 'email' é obrigatório."))
+
+    def test_campo_senha_ausente(self):
+        dados = {'nome': 'Ana', 'email': 'ana@email.com'}
+        self.assertEqual(validar_usuario(dados), (False, "O campo 'senha' é obrigatório."))
+
+    def test_nome_nao_string(self):
+        dados = {'nome': 123, 'email': 'ana@email.com', 'senha': 'abc12345'}
+        self.assertEqual(validar_usuario(dados), (False, "O nome deve ser uma string."))
+
+    def test_email_nao_string(self):
+        dados = {'nome': 'Ana', 'email': 123, 'senha': 'abc12345'}
+        self.assertEqual(validar_usuario(dados), (False, "O e-mail deve ser uma string."))
+
+    def test_senha_nao_string(self):
+        dados = {'nome': 'Ana', 'email': 'ana@email.com', 'senha': 12345678}
+        self.assertEqual(validar_usuario(dados), (False, "A senha deve ser uma string."))
+
+if __name__ == '__main__':
+    unittest.main()
+

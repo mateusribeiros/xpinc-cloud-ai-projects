@@ -1,0 +1,16 @@
+# CONTEXTO: Estou desenvolvendo uma aplicação que realiza o cadastro de usuários em um sistema web.
+# OBJETIVO: Quero criar uma função em Python que valide os dados do usuário antes de salvá-lo no banco de dados.
+# REQUISITOS:
+# - O nome do usuário deve ter pelo menos 3 caracteres;
+# - O e-mail deve conter "@" e ".";
+# - A senha deve ter pelo menos 8 caracteres e conter letras e números.
+# INSTRUÇÃO: Crie a função `validar_usuario(dados)` que receba um dicionário com 'nome', 'email' e 'senha'.
+# A função deve retornar uma tupla (bool, mensagem), indicando se a validação foi bem-sucedida e o motivo.
+# EXEMPLO DE INPUT: {'nome': 'Ana', 'email': 'ana@email.com', 'senha': 'abc12345'}
+# EXEMPLO DE OUTPUT: (True, "Usuário válido.")
+# Siga as boas práticas de código, não leve em consideração apenas esses casos isolados. Leve em consideração erros que podem ocorrer.
+
+# Função:
+def validar_usuario(dados):
+
+# Crie casos de testes completos para validar a função
